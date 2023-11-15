@@ -5,9 +5,9 @@ from crispy_forms.helper import FormHelper
 
 
 class SignUpForm(UserCreationForm):
-    first_name = forms.CharField(max_length=5, required=False)
-    last_name = forms.CharField(max_length=1, required=True)
-    email = forms.EmailField(max_length=10, help_text='eg. youremail@gmail.com')
+    first_name = forms.CharField(max_length=100, required=True)
+    last_name = forms.CharField(max_length=100, required=False)
+    email = forms.EmailField(max_length=100, help_text='eg. youremail@gmail.com')
 
     class Meta:
         model = User
