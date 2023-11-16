@@ -291,14 +291,14 @@ def contact(request):
 
             message_format = "{0} has sent you a new message:\n\n{1}".format(name, message)
 
-            msg = EmailMessage(
-                subject,
-                message_format,
-                to=['contact@zero2launch.io'],
-                from_email=from_email
-            )
+            # msg = EmailMessage(
+            #     subject,
+            #     message_format,
+            #     to=['contact@zero2launch.io'],
+            #     from_email=from_email
+            # )
 
-            msg.send()
+            # msg.send()
 
             return render(request, 'contact_success.html')
 
